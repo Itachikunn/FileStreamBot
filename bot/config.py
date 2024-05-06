@@ -7,11 +7,11 @@ class Telegram:
     ALLOWED_USER_IDS = env.get("ALLOWED_USER_IDS", "").split()
     BOT_USERNAME = env.get("TELEGRAM_BOT_USERNAME", "Itachixfiletolink_bot")
     BOT_TOKEN = env.get("TELEGRAM_BOT_TOKEN", "7063658748:AAGBBU0mAkCBmfkqEDa8-Ab_1mOa0nTrRU8")
-    CHANNEL_ID = int(env.get("TELEGRAM_CHANNEL_ID", -1002079492072))
+    CHANNEL_ID = int(env.get("TELEGRAM_CHANNEL_ID", "-1002079492072"))
     SECRET_CODE_LENGTH = int(env.get("SECRET_CODE_LENGTH", 12))
 
 class Server:
-    BASE_URL = env.get("https://filestreamzz-e29bb1d94044.herokuapp.com/", "http://127.0.0.1:8080")
+    BASE_URL = env.get("https://filestreamzz-e29bb1d94044.herokuapp.com/")
     BIND_ADDRESS = env.get("BIND_ADDRESS", "0.0.0.0")
     PORT = int(env.get("PORT", 8080))
 
